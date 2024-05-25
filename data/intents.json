@@ -1,0 +1,62 @@
+{
+    "intents": [
+        {
+            "tag": "salutation",
+            "patterns": ["salut", "bonjour", "hey", "yo", "comment ça va ?", "ça va bien ?", "salutations", "coucou", "bien le bonjour"],
+            "responses": ["Salut !", "Hey !", "Bonjour !", "Qu'est ce que je peux faire pour toi ?", "Coucou !", "Salut, comment vas-tu ?"]
+        },
+        {
+            "tag": "farewell",
+            "patterns": ["au revoir", "à bientôt", "ciao", "bye", "à plus", "à la prochaine", "à plus tard", "bonne journée", "bonne soirée"],
+            "responses": ["Au revoir !", "À bientôt !", "Ciao !", "Bye !", "À plus tard !", "À la prochaine !", "Bonne journée !", "Bonne soirée !"]
+        },
+        {
+            "tag": "gratitude",
+            "patterns": ["merci", "merci beaucoup", "c'est gentil", "je te remercie", "merci infiniment", "merci bien", "je suis reconnaissant"],
+            "responses": ["De rien !", "Avec plaisir !", "Pas de problème !", "Je suis là pour ça !", "Ça me fait plaisir !", "Tu es toujours le bienvenu !"]
+        },
+        {
+            "tag": "how_are_you",
+            "patterns": ["comment ça va ?", "ça va ?", "tu vas bien ?", "comment vas-tu ?", "ça roule ?", "comment ça se passe ?", "tu te sens bien ?"],
+            "responses": ["Je vais bien, merci ! Et toi ?", "Tout va bien ! Comment vas-tu ?", "Je vais bien, et toi ?", "Ça roule ! Et toi ?", "Je me sens bien, et toi ?"]
+        },
+        {
+            "tag": "small_talk",
+            "patterns": ["quoi de neuf ?", "qu'est-ce que tu fais ?", "tu fais quoi ?", "des nouvelles ?", "quoi de beau ?", "quoi de nouveau ?", "quoi de neuf dans ta vie ?"],
+            "responses": ["Pas grand chose, et toi ?", "Je suis là pour t'aider. Et toi ?", "Rien de spécial, et toi ?", "Je suis toujours prêt à discuter. Quoi de neuf ?", "Je suis ici pour toi, quoi de neuf ?"]
+        },
+        {
+            "tag": "jokes",
+            "patterns": ["raconte-moi une blague", "tu connais des blagues ?", "une blague ?", "fais-moi rire", "tu as une blague ?", "dis-moi une blague", "peux-tu me faire rire ?"],
+            "responses": [
+                "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent encore dans le bateau !",
+                "Quel est le comble pour un électricien ? De ne pas être au courant !",
+                "Pourquoi les canards sont-ils toujours à l’heure ? Parce qu’ils sont dans l’étang (le temps) !",
+                "Que dit une imprimante dans l'eau ? J'ai papier !",
+                "Pourquoi le livre de maths est-il triste ? Parce qu'il a trop de problèmes.",
+                "Pourquoi est-ce que les plongeurs plongent toujours avec un dos-dos ? Pour ne pas tomber en avant !",
+                "Quel est le fruit préféré des policiers ? La poire !",
+                "Pourquoi est-ce que les vaches n'ont pas d'ombre ? Parce qu'elles sont déjà à l'intérieur du lait !",
+                "Pourquoi est-ce qu'on ne parle jamais en bien des chaussettes ? Parce qu'elles sont toujours à pied !",
+                "Que fait une abeille quand elle est en colère ? Elle bzzz !",
+                "Quel est le comble pour un jardinier ? C'est de raconter des salades !",
+                "Pourquoi les poules n’ont-elles pas de chance ? Parce qu’elles se font toujours plumer !",
+                "Pourquoi est-ce que les plongeurs plongent toujours avec un caleçon ? Parce qu'il ne faut pas les mettre à poil !",
+                "Que fait un avocat dans l'eau ? Il avocate !",
+                "Pourquoi le joueur de football amène-t-il son échelle ? Pour marquer des buts de la tête !",
+                "Quel est le comble pour un électricien ? De ne pas être au courant des dernières nouvelles !",
+                "Que dit un oiseau quand il prend son envol ? C’est parti mon kiki !"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["quel temps fait-il ?", "il fait beau ?", "quelle est la météo ?", "le temps qu'il fait", "quel temps fait-il aujourd'hui ?", "comment est la météo ?", "est-ce qu'il pleut ?"],
+            "responses": ["Je ne peux pas vérifier la météo en ce moment, mais tu peux regarder une application de météo !", "Il fait peut-être beau, mais je ne peux pas le vérifier.", "Regarde par la fenêtre ou vérifie une application météo pour le savoir.", "Je n'ai pas accès à la météo actuelle, désolé.", "Tu peux consulter une application de météo pour le savoir."]
+        },
+        {
+            "tag": "hobbies",
+            "patterns": ["tu fais quoi pour t'amuser ?", "quels sont tes passe-temps ?", "qu'est-ce que tu aimes faire ?", "tes hobbies ?", "qu'est-ce que tu fais pendant ton temps libre ?", "tes loisirs ?", "que fais-tu pour te divertir ?"],
+            "responses": ["J'aime discuter avec les gens et les aider à trouver des réponses.", "Mes passe-temps sont virtuels, mais j'aime toujours une bonne conversation.", "Je passe mon temps à apprendre de nouvelles choses pour mieux t'aider.", "J'adore interagir avec les utilisateurs comme toi !", "Mon loisir préféré est d'aider les gens."]
+        }
+    ]
+}
