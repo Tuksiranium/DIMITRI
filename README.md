@@ -1,0 +1,3 @@
+# DIMITRI
+
+Discord chat bot
