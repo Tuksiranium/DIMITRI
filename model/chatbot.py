@@ -15,17 +15,20 @@ nltk.download("popular", quiet=True)
 
 class Chatbot:
     def __init__(self, model_loc: str, data_dir: str) -> None:
-        self.intents = json.loads(open(data_dir+'/intents.json').read())
+        with open(data_dir+'/intents.json', encoding='utf-8') as intent_reader:
+            self.intents = json.load(intent_reader)
         self.words = pickle.load(open(data_dir+'/words.pkl', 'rb'))
         self.classes = pickle.load(open(data_dir+'/classes.pkl', 'rb'))
 
         self.model = ts.keras.models.load_model(model_loc)
         self.lemmatizer = nltk.WordNetLemmatizer()
     
+
     def __clean_up_sentence(self, sentence: str) -> list:
         sentence_words = nltk.word_tokenize(sentence)
         sentence_words = [ self.lemmatizer.lemmatize(word) for word in sentence_words ]
         return sentence_words
+
 
     def __bag_of_words(self, sentence: str) -> np.array:
         sentence_words = self.__clean_up_sentence(sentence)
@@ -35,6 +38,7 @@ class Chatbot:
                 if word == w:
                     bag[idx] = 1
         return np.array(bag)
+
     
     def __predict_class(self, sentence: str) -> list:
         bow = self.__bag_of_words(sentence)
@@ -48,6 +52,7 @@ class Chatbot:
                 'probability': str(r[1])
             })
         return return_list
+
     
     def __get_response(self, intents_list: list, intents_json: list) -> str:
         tag = intents_list[0]['intent']
@@ -57,6 +62,7 @@ class Chatbot:
             if intent['tag'] == tag:
                 result = random.choice(intent['responses'])
         return result
+
 
     def request(self, message: str) -> str:
         ints = self.__predict_class(message)
