@@ -1,3 +1,3 @@
 # DIMITRI
 
-Discord chat bot
+Basic Discord chat bot (trained in french)
